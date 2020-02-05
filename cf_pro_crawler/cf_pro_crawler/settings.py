@@ -65,10 +65,10 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'scrapy.pipelines.product_images.ImagesPipeline': 1,
+    'scrapy.pipelines.images.ImagesPipeline': 1,
 }
 
-IMAGES_STORE = '~/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'
+IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
