@@ -11,4 +11,12 @@ import scrapy
 class CfProCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    product_code = scrapy.Field()
+	product_name = scrapy.Field()
+	product_brand = scrapy.Field()
+	product_price = scrapy.Field()
+	product_desc = scrapy.Field()
+	product_url = scrapy.Field()
+
+	product_imageUrls = scrapy.Field()
+	product_images = scrapy.Field()
