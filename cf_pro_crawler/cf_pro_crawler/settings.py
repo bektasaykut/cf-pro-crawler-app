@@ -65,8 +65,8 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'scrapy.pipelines.images.ImagesPipeline': 1,
-    'cf_pro_crawler.pipelines.CfProCrawlerPipeline': 2,
+    'scrapy.pipelines.images.ImagesPipeline': 300,
+    'cf_pro_crawler.pipelines.CfProCrawlerPipeline': 800,
 }
 
 IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'
@@ -91,3 +91,22 @@ IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_image
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+FEED_URI='products.csv'
+
+FEED_FORMAT='csv'
+
+FEED_EXPORTERS = {
+    'csv': 'scrapy.exporters.CsvItemExporter',
+}
+
+FEED_EXPORT_FIELDS = [
+    'product_code',
+	'product_name',
+	'product_brand',
+	'product_price',
+	'product_desc',
+	'product_url',
+	'product_cat_nums',
+	'product_cat_names'
+]
