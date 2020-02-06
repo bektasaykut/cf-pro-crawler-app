@@ -77,7 +77,7 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 	- Second one is in the **settings.py** file.  
     		`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
 		
-	**!Important Note!**: If you're executing on Windows, specify the folder path like C:\Windows\Users\<username>\Desktop\<project_path>\..  
+	>**!Important Note!**: If you're executing on Windows, specify the folder path like C:\Windows\Users\<username>\Desktop\<project_path>\..  
 
 4. Specify the product url to be crawled as below and use the Scrapy command to extract product image(s) folder and csv output.  
 	`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211"`  
