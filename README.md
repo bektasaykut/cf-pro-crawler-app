@@ -4,7 +4,7 @@ A basic product crawler integrated for carrefoursa.com for product images and cs
 
 ## File Tree 
 GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
->.cf-pro-crawler-app
+.cf-pro-crawler-app
 ├── cf_pro_crawler
 │   ├── cf_pro_crawler
 │   │   ├── __init__.py
