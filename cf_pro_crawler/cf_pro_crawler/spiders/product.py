@@ -8,11 +8,11 @@ import re
 class ProductSpider(scrapy.Spider):
     name = 'product'
     allowed_domains = ['www.carrefoursa.com/tr/']
-    start_urls = ['https://www.carrefoursa.com/tr/lg-55sm8000pla-nanocell-4k-ultra-hd-55-140-ekran-uydu-alicili-smart-led-televizyon-p-30262223']
+    # start_urls = ['https://www.carrefoursa.com/tr/lg-55sm8000pla-nanocell-4k-ultra-hd-55-140-ekran-uydu-alicili-smart-led-televizyon-p-30262223']
 
-    # def __init__(self, *args, **kwargs):
-    #     super(ProductSpider, self).__init__(*args, **kwargs)
-    #     self.start_urls = kwargs.get('start_urls').split(',')
+    def __init__(self, *args, **kwargs):
+        super(ProductSpider, self).__init__(*args, **kwargs)
+        self.start_urls = kwargs.get('start_urls').split(',')
 
     def parse(self, response):
         product_code = response.xpath('//*[@id="addToCartForm"]/input[3]/@value').extract_first()
