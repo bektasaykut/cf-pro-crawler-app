@@ -107,3 +107,6 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
   
 >`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481" -o productsAsJson.json -t json`  
   
+  
+  
+![That's all!](https://media.giphy.com/media/26ufhdVy07v00aTxS/giphy.gif)
