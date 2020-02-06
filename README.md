@@ -69,13 +69,13 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 	`git clone https://github.com/eemektas/cf-pro-crawler-app.git`  
 
 2. Direct to cf_pro_crawler folder in the project on cmd/terminal:  
-	`cd ~/<your project directory>/cf-pro-crawler-app/cf_pro_crawler`  
+	`cd ~/<your_path_to_project>/cf-pro-crawler-app/cf_pro_crawler`  
 
 3. Define the path for product_images folder to be saved in by your specific system features. Folder path should be defined in 2 different parts in the project. Linux based definitions defined below here. **Be careful while defining your path if you are a Windows or Mac user.**  
 	- First pathway is in the **pipelines.py** file. Find the similar code in your project and, then modify for your specific system path.  
-    		os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')  
+    		`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')`  
 	- Second one is in the **settings.py** file.  
-    		IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'  
+    		`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
 
 4. Specify the product url to be crawled as below and use the Scrapy command to extract product image(s) folder and csv output.  
 	`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211"`  
