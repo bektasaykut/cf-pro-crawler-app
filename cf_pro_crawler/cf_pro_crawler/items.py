@@ -6,6 +6,7 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+#from cf_pro_crawler.product import ProductSpider
 
 
 class CfProCrawlerItem(scrapy.Item):
@@ -15,6 +16,9 @@ class CfProCrawlerItem(scrapy.Item):
     product_price = scrapy.Field()
     product_desc = scrapy.Field()
     product_url = scrapy.Field()
+    product_cat_nums = scrapy.Field()
+    product_cat_names = scrapy.Field()
 
     image_urls = scrapy.Field()
     images = scrapy.Field()
+
