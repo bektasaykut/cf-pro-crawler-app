@@ -50,14 +50,14 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 ## App Requirements  
 
 - Scrapy  
-	You can install Scrapy using `pip` with:  
+	>You can install Scrapy using `pip` with:  
 	`pip install Scrapy`  
 	Or install Scrapy using setuptools‘s `easy_install` with:  
 	`easy_install -U Scrapy`  
 	For more detailed guide: https://docs.scrapy.org/en/latest/intro/install.html  
 
 - Pillow  
-	Install Pillow with `pip`:  
+	>Install Pillow with `pip`:  
 	`pip install Pillow`  
 	Or:  
 	`python -m pip install Pillow`  
