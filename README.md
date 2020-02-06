@@ -4,48 +4,48 @@ A basic product crawler integrated for carrefoursa.com for product images and cs
 
 ## File Tree 
 GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
-.cf-pro-crawler-app
-├── cf_pro_crawler
-│   ├── cf_pro_crawler
-│   │   ├── __init__.py
-│   │   ├── __init__.pyc
-│   │   ├── items.py
-│   │   ├── items.pyc
-│   │   ├── middlewares.py
-│   │   ├── pipelines.py
-│   │   ├── pipelines.pyc
-│   │   ├── __pycache__
-│   │   │   ├── __init__.cpython-36.pyc
-│   │   │   ├── items.cpython-36.pyc
-│   │   │   ├── pipelines.cpython-36.pyc
-│   │   │   └── settings.cpython-36.pyc
-│   │   ├── settings.py
-│   │   ├── settings.pyc
-│   │   └── spiders
-│   │       ├── __init__.py
-│   │       ├── __init__.pyc
-│   │       ├── product.py
-│   │       ├── product.pyc
-│   │       └── __pycache__
-│   │           ├── __init__.cpython-36.pyc
-│   │           └── product.cpython-36.pyc
-│   ├── images_test
-│   │   └── full
-│   │       ├── 30027760_1.jpg
-│   │       ├── 30089983_1.jpg
-│   │       ├── 30089983_2.jpg
-│   │       ├── 30138247_1.jpg
-│   │       ├── 30138247_2.jpg
-│   │       ├── 30202211_1.jpg
-│   │       ├── 30217098_1.jpg
-│   │       ├── 30217098_2.jpg
-│   │       ├── 30248468_1.jpg
-│   │       ├── 30248468_2.jpg
-│   │       └── 30256481_1.jpg
-│   ├── products_test.csv
-│   └── scrapy.cfg
-├── LICENSE
-└── README.md
+>.cf-pro-crawler-app
+-├── cf_pro_crawler
+-│   ├── cf_pro_crawler
+-│   │   ├── __init__.py
+-│   │   ├── __init__.pyc
+-│   │   ├── items.py
+-│   │   ├── items.pyc
+-│   │   ├── middlewares.py
+-│   │   ├── pipelines.py
+-│   │   ├── pipelines.pyc
+-│   │   ├── __pycache__
+-│   │   │   ├── __init__.cpython-36.pyc
+-│   │   │   ├── items.cpython-36.pyc
+-│   │   │   ├── pipelines.cpython-36.pyc
+-│   │   │   └── settings.cpython-36.pyc
+-│   │   ├── settings.py
+-│   │   ├── settings.pyc
+-│   │   └── spiders
+-│   │       ├── __init__.py
+-│   │       ├── __init__.pyc
+-│   │       ├── product.py
+-│   │       ├── product.pyc
+-│   │       └── __pycache__
+-│   │           ├── __init__.cpython-36.pyc
+-│   │           └── product.cpython-36.pyc
+-│   ├── images_test
+-│   │   └── full
+-│   │       ├── 30027760_1.jpg
+-│   │       ├── 30089983_1.jpg
+-│   │       ├── 30089983_2.jpg
+-│   │       ├── 30138247_1.jpg
+-│   │       ├── 30138247_2.jpg
+-│   │       ├── 30202211_1.jpg
+-│   │       ├── 30217098_1.jpg
+-│   │       ├── 30217098_2.jpg
+-│   │       ├── 30248468_1.jpg
+-│   │       ├── 30248468_2.jpg
+-│   │       └── 30256481_1.jpg
+-│   ├── products_test.csv
+-│   └── scrapy.cfg
+-├── LICENSE
+-└── README.md
 
 ## App Requirements
 
