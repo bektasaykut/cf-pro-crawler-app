@@ -9,7 +9,7 @@ import os
 
 class CfProCrawlerPipeline(object):
 	def process_item(self, item, spider):
-		os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')
+		os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/cf_pro_crawler/product_images')
 
 		for num in range(len(item['images'])): 
 			if item['images'][num]['path']:

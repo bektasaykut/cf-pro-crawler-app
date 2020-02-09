@@ -69,7 +69,7 @@ ITEM_PIPELINES = {
     'cf_pro_crawler.pipelines.CfProCrawlerPipeline': 800,
 }
 
-IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'
+IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/cf_pro_crawler/product_images'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -107,6 +107,13 @@ FEED_EXPORT_FIELDS = [
 	'product_price',
 	'product_desc',
 	'product_url',
-	'product_cat_nums',
-	'product_cat_names'
+ 	'product_cat_num_1',
+ 	'product_cat_name_1',
+ 	'product_cat_num_2',
+ 	'product_cat_name_2',
+ 	'product_cat_num_3',
+ 	'product_cat_name_3',
+ 	'product_cat_num_4',
+ 	'product_cat_name_4'
 ]
+
