@@ -51,36 +51,36 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 
 - Scrapy  
 	>You can install Scrapy using `pip` with:  
-	-`pip install Scrapy`  
+	>`pip install Scrapy`  
 	Or install Scrapy using setuptools‘s `easy_install` with:  
-	-`easy_install -U Scrapy`  
+	>`easy_install -U Scrapy`  
 	For more detailed guide: https://docs.scrapy.org/en/latest/intro/install.html  
 
 - Pillow  
 	>Install Pillow with `pip`:  
-	-`pip install Pillow`  
+	>`pip install Pillow`  
 	Or:  
-	-`python -m pip install Pillow`  
+	>`python -m pip install Pillow`  
 	For more detailed guide: https://pillow.readthedocs.io/en/latest/installation.html  
 
 ## cf_pro_crawler Using Guide  
 
 1. Download the project from https://github.com/eemektas/cf-pro-crawler-app or Clone it to your directory by:  
-	-`git clone https://github.com/eemektas/cf-pro-crawler-app.git`  
+	>`git clone https://github.com/eemektas/cf-pro-crawler-app.git`  
 
 2. Direct to cf_pro_crawler folder in the project on cmd/terminal:  
-	-`cd ~/<your_path_to_project>/cf-pro-crawler-app/cf_pro_crawler`  
+	>`cd ~/<your_path_to_project>/cf-pro-crawler-app/cf_pro_crawler`  
 
 3. Define the path for product_images folder to be saved in by your specific system features. Folder path should be defined in 2 different parts in the project. Linux based definitions defined below here. **Be careful while defining your path if you are a Windows or Mac user.**  
 	- First pathway is in the **pipelines.py** file. Find the similar code in your project and, then modify for your specific system path.  
-    		-`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')`  
+    	>`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')`  
 	- Second one is in the **settings.py** file.  
-    		-`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
+    	>`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
 		  
 	  >**!Important Note!**: If you're executing on Windows, specify the folder path like C:\Windows\Users\<username>\Desktop\<project_path>\..  
 
 4. Specify the product url to be crawled as below and use the Scrapy command to extract product image(s) folder and csv output.  
-	-`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211"`  
+	>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211"`  
 
 5. Then image(s) folder and csv output will be appear in the cf-product-crawler-app project folder named as **product_images** and **products.csv** if you defined the folder path similar as explaned above.  
 >.cf-pro-crawler-app  
@@ -103,11 +103,11 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 ## *Optional*   
 - Multiple products can be crawled if desired. To do that, seperate the product urls with comma(,) and no space around commas. e.g:  
   
->-`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481"`  
+>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481"`  
 
 - Output file format can be changed to json/xml with the Scrapy -o and -t code below. Just change `-o productsAsXml.xml -t xml` in the code snippet below to extract xml file.  
   
->-`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481" -o productsAsJson.json -t json`  
+>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481" -o productsAsJson.json -t json`  
   
   
   
