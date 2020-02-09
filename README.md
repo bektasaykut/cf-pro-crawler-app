@@ -73,9 +73,9 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 
 3. Define the path for product_images folder to be saved in by your specific system features. Folder path should be defined in 2 different parts in the project. Linux based definitions defined below here. **Be careful while defining your path if you are a Windows or Mac user.**  
 	- First pathway is in the **pipelines.py** file. Find the similar code in your project and, then modify for your specific system path.  
-    		`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')`  
+    	>`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')`  
 	- Second one is in the **settings.py** file.  
-    		`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
+    	>`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
 		  
 	  >**!Important Note!**: If you're executing on Windows, specify the folder path like C:\Windows\Users\<username>\Desktop\<project_path>\..  
 
