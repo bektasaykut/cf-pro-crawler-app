@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+import re
 import scrapy
 from scrapy.loader import ItemLoader
 from cf_pro_crawler.items import CfProCrawlerItem
-import re
 
 
 class ProductSpider(scrapy.Spider):
@@ -38,6 +38,13 @@ class ProductSpider(scrapy.Spider):
         product_cat_nums = [cat_num[0].split('/')[-1].split('"')[0] for cat_num in product_cats]
         product_cat_names = [cat_name[1].split('<')[0] for cat_name in product_cats]
 
+        pnum = {}
+        pname = {}
+        for each in range(len(product_cat_nums)):
+            pnum['product_cat_num_{}'.format(each+1)] = product_cat_nums[each]
+            pname['product_cat_name_{}'.format(each+1)] = product_cat_names[each]
+
+
         l = ItemLoader(item=CfProCrawlerItem(), response=response)
 
         l.add_value('product_code', product_code)
@@ -47,7 +54,14 @@ class ProductSpider(scrapy.Spider):
         l.add_value('product_desc', product_desc)
         l.add_value('product_url', product_url)
         l.add_value('image_urls', image_urls)
-        l.add_value('product_cat_nums', product_cat_nums)
-        l.add_value('product_cat_names', product_cat_names)
+        #l.add_value('product_cat_nums', product_cat_nums)
+        #l.add_value('product_cat_names', product_cat_names)
+
+        for num in list(pnum.keys()):
+            l.add_value(num, pnum[num])
+
+        for name in list(pname.keys()):
+            l.add_value(name, pname[name])
 
         return l.load_item()
+        
