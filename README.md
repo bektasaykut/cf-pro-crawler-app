@@ -73,9 +73,9 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 
 3. Define the path for product_images folder to be saved in by your specific system features. Folder path should be defined in 2 different parts in the project. Linux based definitions defined below here. **Be careful while defining your path if you are a Windows or Mac user.**  
 	- First pathway is in the **pipelines.py** file. Find the similar code in your project and, then modify for your specific system path.  
-    	>`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images')`  
+    	>`os.chdir('/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/cf_pro_crawler/product_images')`  
 	- Second one is in the **settings.py** file.  
-    	>`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/product_images'`  
+    	>`IMAGES_STORE = '/home/zx/Desktop/cf-pro-crawler-app/cf_pro_crawler/cf_pro_crawler/product_images'`  
 		  
 	  >**!Important Note!**: If you're executing on Windows, specify the folder path like C:\Windows\Users\<username>\Desktop\<project_path>\..  
 
@@ -83,7 +83,7 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 	>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211"`  
 
 5. Then image(s) folder and csv output will be appear in the cf-product-crawler-app project folder named as **product_images** and **products.csv** if you defined the folder path similar as explaned above.  
->.cf-pro-crawler-app  
+>.cf_pro_crawler  
 ├── **images_test**  
 │   └── full  
 │       ├── 30027760_1.jpg  
