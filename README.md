@@ -83,32 +83,32 @@ GitHub project -> https://github.com/eemektas/cf-pro-crawler-app
 	>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211"`  
 
 5. Then image(s) folder and csv output will be appear in the cf-product-crawler-app project folder named as **product_images** and **products.csv** if you defined the folder path similar as explaned above.  
->.cf_pro_crawler  
-├── **images_test**  
-│   └── full  
-│       ├── 30027760_1.jpg  
-│       ├── 30089983_1.jpg  
-│       ├── 30089983_2.jpg  
-│       ├── 30138247_1.jpg  
-│       ├── 30138247_2.jpg  
-│       ├── 30202211_1.jpg  
-│       ├── 30217098_1.jpg  
-│       ├── 30217098_2.jpg  
-│       ├── 30248468_1.jpg  
-│       ├── 30248468_2.jpg  
-│       └── 30256481_1.jpg  
-├── **products_test.csv**  
+	>.cf_pro_crawler  
+	├── **images_test**  
+	│   └── full  
+	│       ├── 30027760_1.jpg  
+	│       ├── 30089983_1.jpg  
+	│       ├── 30089983_2.jpg  
+	│       ├── 30138247_1.jpg  
+	│       ├── 30138247_2.jpg  
+	│       ├── 30202211_1.jpg  
+	│       ├── 30217098_1.jpg  
+	│       ├── 30217098_2.jpg  
+	│       ├── 30248468_1.jpg  
+	│       ├── 30248468_2.jpg  
+	│       └── 30256481_1.jpg  
+	├── **products_test.csv**  
 
 
 ## *Optional*   
 - Multiple products can be crawled if desired. To do that, seperate the product urls with comma(,) and no space around commas. e.g:  
   
->`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481"`  
+	>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481"`  
 
 - Output file format can be changed to json/xml with the Scrapy -o and -t code below. Just change `-o productsAsXml.xml -t xml` in the code snippet below to extract xml file.  
   
->`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481" -o productsAsJson.json -t json`  
+	>`scrapy crawl product -a start_urls="https://www.carrefoursa.com/tr/pinar-ac-bitir-buyuk-dilim-hindi-salam-60-g-p-30202211,https://www.carrefoursa.com/tr/johnson-s-baby-shampoo-200-ml-p-30027760,https://www.carrefoursa.com/tr/schweppes-mandarin-mandalina-aromali-gazli-icecek-sise-6x250-ml-p-30089983,https://www.carrefoursa.com/tr/gagoz-sise-250-ml-p-30138247,https://www.carrefoursa.com/tr/sprite-ml-kutu-6x250-p-30217098,https://www.carrefoursa.com/tr/carrefour-gezen-tavuk-yumurtasi-10-adet-m-boy-p-30248468,https://www.carrefoursa.com/tr/steps-sports-soguk-sicak-termojel-medium-p-30256481" -o productsAsJson.json -t json`  
   
   
   
-![That's all!](https://media.giphy.com/media/26ufhdVy07v00aTxS/giphy.gif)  
+	![That's all!](https://media.giphy.com/media/26ufhdVy07v00aTxS/giphy.gif)  
